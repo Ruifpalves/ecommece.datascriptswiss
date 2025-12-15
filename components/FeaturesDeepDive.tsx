@@ -68,7 +68,7 @@ const FeaturesDeepDive: React.FC = () => {
       metric: t('featuresDeep.whatsapp.metric'),
       imageSrc: "/WhatsApp Cart Recovery.png",
       imageAlt: "Screenshot: WhatsApp convo showing abandoned cart message + customer positive response",
-      scale: 1.2
+      scale: 2.5
     },
     {
       title: t('featuresDeep.aiagent.title'),
@@ -82,7 +82,7 @@ const FeaturesDeepDive: React.FC = () => {
       metric: t('featuresDeep.aiagent.metric'),
       imageSrc: "/Website AI Agent.png",
       imageAlt: "Screenshot: Website chat widget showing AI answering 'Where's my order?'",
-      scale: 1.3
+      scale: 3.0
     },
     {
       title: t('featuresDeep.research.title'),
@@ -96,7 +96,7 @@ const FeaturesDeepDive: React.FC = () => {
       metric: t('featuresDeep.research.metric'),
       imageSrc: "/Product Research AI.png",
       imageAlt: "Screenshot: Dashboard showing 'Trending Products' list with metrics",
-      scale: 1.2
+      scale: 3.0
     },
     {
       title: t('featuresDeep.video.title'),
@@ -110,7 +110,7 @@ const FeaturesDeepDive: React.FC = () => {
       metric: t('featuresDeep.video.metric'),
       imageSrc: "/Video Generator.png",
       imageAlt: "Screenshot: Before/After product image transforms into video with text overlay",
-      scale: 1.2
+      scale: 3.0
     },
     {
       title: t('featuresDeep.image.title'),
@@ -124,7 +124,7 @@ const FeaturesDeepDive: React.FC = () => {
       metric: t('featuresDeep.image.metric'),
       imageSrc: "/AI Image Studio.png",
       imageAlt: "Screenshot: Product on white background transforming into lifestyle scene",
-      scale: 1.0
+      scale: 1.5
     },
     {
       title: t('featuresDeep.analytics.title'),
@@ -138,7 +138,7 @@ const FeaturesDeepDive: React.FC = () => {
       metric: t('featuresDeep.analytics.metric'),
       imageSrc: "/Advanced Analytics.png",
       imageAlt: "Screenshot: Dashboard with multiple widgets, searches, sentiment, recovery rate",
-      scale: 1.2
+      scale: 3.0
     }
   ];
 
