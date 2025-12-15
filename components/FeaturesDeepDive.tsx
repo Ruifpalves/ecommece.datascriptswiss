@@ -14,8 +14,19 @@ interface FeatureProps {
 
 const FeatureCard: React.FC<FeatureProps> = ({ title, headline, bullets, metric, imageSrc, imageAlt, scale = 1.8 }) => (
   <div className="bg-[#121212] rounded-[2rem] p-6 md:p-8 border border-white/5 shadow-xl hover:border-brand-gold/30 transition-all duration-300 flex flex-col h-full group hover:bg-[#151515]">
-    <div className="mb-8 rounded-2xl overflow-hidden relative aspect-video">
-      <img src={imageSrc} alt={imageAlt} className="w-full h-full object-cover object-center transition-transform duration-700" style={{ transform: `scale(${scale})` }} onMouseEnter={(e) => e.currentTarget.style.transform = `scale(${scale + 0.05})`} onMouseLeave={(e) => e.currentTarget.style.transform = `scale(${scale})`} />
+    <div className="mb-8 rounded-2xl overflow-hidden relative aspect-video bg-gradient-to-br from-white/5 to-white/10">
+      <img
+        src={imageSrc}
+        alt={imageAlt}
+        loading="lazy"
+        className="w-full h-full object-cover object-center transition-transform duration-700 image-rendering-crisp"
+        style={{
+          transform: `scale(${scale})`,
+          imageRendering: '-webkit-optimize-contrast'
+        }}
+        onMouseEnter={(e) => e.currentTarget.style.transform = `scale(${scale + 0.05})`}
+        onMouseLeave={(e) => e.currentTarget.style.transform = `scale(${scale})`}
+      />
     </div>
     
     <div className="flex-1 flex flex-col">

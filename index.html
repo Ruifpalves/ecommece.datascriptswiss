@@ -43,6 +43,26 @@
         }
       }
     </script>
+    <style>
+      /* High-quality image rendering */
+      img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;
+      }
+
+      /* Smooth image scaling */
+      .image-rendering-crisp {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+      }
+
+      /* Anti-aliasing for better quality */
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
   <script type="importmap">
 {
   "imports": {
