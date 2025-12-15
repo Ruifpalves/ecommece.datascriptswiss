@@ -44,17 +44,21 @@
       }
     </script>
     <style>
-      /* High-quality image rendering */
+      /* High-quality image rendering for screenshots */
       img {
         image-rendering: -webkit-optimize-contrast;
-        image-rendering: crisp-edges;
-        -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: high-quality;
+        image-rendering: optimizeQuality;
+        -ms-interpolation-mode: bicubic;
+        backface-visibility: hidden;
+        transform: translateZ(0);
       }
 
-      /* Smooth image scaling */
+      /* Smooth scaling for feature images */
       .image-rendering-crisp {
-        image-rendering: -webkit-optimize-contrast;
-        image-rendering: crisp-edges;
+        image-rendering: auto;
+        image-rendering: high-quality;
+        filter: contrast(1.05) brightness(1.02);
       }
 
       /* Anti-aliasing for better quality */
